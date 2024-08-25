@@ -7,105 +7,46 @@
     <title>Construcción</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/Coming-Soon-Page-V2.css">
-    <style>
-        .coming-soon-container {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-            background: #11171d;
-        }
-
-        .coming-soon-content {
-            color: #d0c6ba;
-            text-align: center;
-            padding: 20px;
-        }
-
-        #timer {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        #timer div {
-            background: #11171d;
-            color: #d0c6ba;
-            padding: 10px;
-            margin: 0 5px;
-            border-radius: 5px;
-        }
-
-        .form-control {
-            border-radius: 0;
-        }
-
-        .btn-primary {
-            background-color: #d0c6ba;
-            border: none;
-        }
-
-        .social a {
-            color: rgb(177,176,174);
-        }
-
-        .social svg {
-            width: 24px;
-            height: 24px;
-        }
-
-        .coming-soon-image {
-            flex: 1;
-            background: url('assets/img/CE5DF369-CD19-4124-A278-8E1689FC9938_1_201_a.jpeg') bottom / cover;
-            height: 300px;
-            margin: 20px;
-        }
-
-        @media (min-width: 768px) {
-            .coming-soon-image {
-                height: 500px;
-            }
-        }
-
-        .terms-conditions a {
-            color: rgba(80,89,96,0.62);
-        }
-    </style>
 </head>
 
-<body style="--bs-primary: #11171d; --bs-primary-rgb: 17,23,29;">
+<body style="--bs-primary: #11171d;--bs-primary-rgb: 17,23,29;">
     <!-- Start: Coming Soon Page V2 -->
     <div class="coming-soon-container">
         <div class="coming-soon-cont">
             <div class="coming-soon-wrap">
-                <div class="coming-soon-content">
-                    <h4>Coming Soon</h4>
-                    <p>We will be here in a short while...</p>
-                    <div id="timer">
-                        <div class="days"><span class="count">--</span><span class="text">Days</span></div>
-                        <div class="hours"><span class="count">--</span><span class="text">Hours</span></div>
-                        <div class="min"><span class="count">--</span><span class="text">Mins</span></div>
-                        <div class="sec"><span class="count">--</span><span class="text">Secs</span></div>
-                    </div>
-                    <h3>Subscribe to get notified!</h3>
-                    <form class="text-left">
-                        <div id="email-field" class="field-wrapper input d-flex">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg>
-                            <input class="form-control form-control" type="text" id="email" name="email" placeholder="Email">
-                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                <div class="coming-soon-container">
+                    <div class="coming-soon-content">
+                        <h4 style="color: #d0c6ba;">Coming Soon</h4>
+                        <p>We will be here in a shortwhile.....</p>
+                        <div id="timer">
+                            <div class="days" style="background: #11171d;"><span class="count">--</span><span class="text" style="color: rgba(80,89,96,0.62);">Days</span></div>
+                            <div class="hours" style="background: #11171d;"><span class="count">--</span><span class="text" style="color: rgba(80,89,96,0.62);">Hours</span></div>
+                            <div class="min" style="background: #11171d;"><span class="count">--</span><span class="text" style="color: rgba(80,89,96,0.62);">Mins</span></div>
+                            <div class="sec" style="background: rgb(17,23,29);"><span class="count">--</span><span class="text" style="color: rgba(80,89,96,0.62);">Secs</span></div>
                         </div>
-                    </form>
-                    <ul class="list-inline social">
-                        <li class="list-inline-item"><a href="https://www.linkedin.com/in/joseraulchasee/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
-                        <li class="list-inline-item"><a href="https://www.instagram.com/ok_chasee/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-8 15a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm-4-8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4zm8-4a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1z"></path></svg></a></li>
-                        <li class="list-inline-item"><a href="https://github.com/joseraulsoriano"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
-                    </ul>
-                    <p class="terms-conditions">© 2024 All Rights Reserved. <a href="#" style="color: rgba(80,89,96,0.62);">Cookie Preferences</a>, <a href="#" style="color: rgba(80,89,96,0.62);">Privacy</a>, and <a href="#" style="color: rgba(80,89,96,0.62);">Terms</a>.</p>
+                        <h3>Subscribe to get notified!</h3>
+                        <form class="text-left">
+                            <div class="coming-soon">
+                                <div>
+                                    <div id="email-field" class="field-wrapper input"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-at-sign"><circle cx="12" cy="12" r="4"></circle><path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"></path></svg><input class="form-control form-control" type="text" id="email" name="email" value="" placeholder="Email"><button class="btn btn-primary" type="submit" value="">Subscribe</button></div>
+                                </div>
+                            </div>
+                        </form>
+                        <ul class="list-inline social" style="color: rgb(177,176,174);">
+                            <li class="list-inline-item list-inline-item"><a href="https://www.linkedin.com/in/joseraulchasee/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+                            <li class="list-inline-item list-inline-item"><a href="https://www.instagram.com/ok_chasee/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8a4 4 0 0 1 3.37 3.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a></li>
+                            <li class="list-inline-item list-inline-item"><a href="https://github.com/joseraulsoriano"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li>
+                        </ul>
+                        <p class="terms-conditions">© 2024 All Rights Reserved. <a style="color: rgba(80,89,96,0.62);">Cookie Preferences</a>, <a style="color: rgba(80,89,96,0.62);">Privacy</a>, and <a style="color: rgba(80,89,96,0.62);">Terms</a>.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="coming-soon-image"></div>
+        <div class="coming-soon-image">
+            <div class="l-image">
+                <div class="img-content" style="background: url(&quot;assets/img/CE5DF369-CD19-4124-A278-8E1689FC9938_1_201_a.jpeg&quot;) bottom / cover;"></div>
+            </div>
+        </div>
     </div><!-- End: Coming Soon Page V2 -->
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/Coming-Soon-Page-V2-coming-soon.js"></script>
